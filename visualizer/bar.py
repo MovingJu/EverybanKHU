@@ -98,7 +98,7 @@ def bar_cat_gen():
     df1 = df1.drop('date', axis=1)
     df1 = df1.drop(0, axis=0)
 
-    cat = ['alba', 'entertainment', 'food', 'rent', 'shopping', 'transport']
+    cat = ['food','tp','enter','donated','drink','pin','shop']
 
     for idx, val in enumerate(df1['note']):
         if not any(val == j for j in cat):

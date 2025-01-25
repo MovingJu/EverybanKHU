@@ -8,7 +8,7 @@ class TotalSaveButton(Button):
         super().__init__(**kwargs)
         self.text = "Save"
         self.size_hint_y = None
-        self.height = 50
+        self.height = 80
         
         self.file_path = file_path
         self.total_amount = total_amount

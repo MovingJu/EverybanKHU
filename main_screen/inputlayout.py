@@ -24,7 +24,6 @@ class InputLayout(BoxLayout):
             font_size="16sp",
             size_hint_y=None,
             height=dp(40),
-            input_filter='int',
             input_type='number'
         )
         self.money_input.bind(on_text_validate=self.on_amount_enter, text=self.on_amount_change)
@@ -32,7 +31,7 @@ class InputLayout(BoxLayout):
 
         # Note 입력 필드 (초기화는 하지만 숨김 상태)
         self.note_input = TextInput(
-            hint_text="Enter Note (e.g., Coffee, Rent)",
+            hint_text="Enter Note (food, tp, enter, donated, drink, pin, shop)",
             font_name='NanumGothicBold.ttf',
             multiline=False,
             background_color=(1, 1, 1, 1),
@@ -83,14 +82,6 @@ class InputLayout(BoxLayout):
         self.add_widget(self.money_input)
         self.add_widget(self.spacer)
 
-    def reset_layout(self):
-        """원래 상태로 레이아웃 복구."""
-        self.clear_widgets()  # 기존 위젯들을 제거
-        # Amount 필드를 먼저 추가하여 순서를 복구
-        self.add_widget(self.money_input)
-        self.add_widget(self.note_input)
-        self.add_widget(self.spacer)
-        self.hide_note_input()  # Note 필드 숨김
 
     def reset_layout(self):
         """원래 상태로 레이아웃 복구."""

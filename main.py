@@ -1,4 +1,4 @@
-#!/home/galesky/Documents/GitHub/aaesongie/Lee/python/application/kivymd_venv/bin/python3.10
+#!/home/galesky/Documents/GitHub/everybank/kivymd_venv/bin/python3.10
 
 kor_font = 'NanumGothicBold.ttf'
 

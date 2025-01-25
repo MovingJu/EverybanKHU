@@ -8,7 +8,7 @@ class WidgetButton(Button):
         super().__init__(**kwargs)
         self.text = "Widgets"
         self.size_hint = (None, None)
-        self.size = (100, 50)
+        self.size = (120, 80)
         self.pos = (10, 10)
         self.bind(on_press=self.show_widgets)
 
